@@ -27,6 +27,7 @@ body {
 .logo {
 	font-weight: bold;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 a {
@@ -40,4 +41,41 @@ a {
 a:hover {
 	background-color: #e74c3c;
 	color: white;
+}
+
+.items{
+	list-style: none; 
+	padding: 0px;
+	margin: 0px;
+}
+
+.item{
+	margin-bottom: 2px;
+}
+
+@media screen and (min-width: 640px){
+	.items{
+		display:flex;
+		text-align: center;
+	}
+
+	.item{
+		flex: 1 1 25%;
+		margin-bottom: 0px;
+		margin-right:2px;
+	}
+}
+
+@media screen and (min-width:1000px){
+	.hlavicka{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+	}
+
+	.logo{
+		margin-bottom: 0px;
+	}
+
 }
